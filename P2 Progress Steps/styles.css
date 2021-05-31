@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+body {
+  font-family: "Muli", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-image: url("https://images.unsplash.com/photo-1494185728463-86366f396213?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fG1pbmltYWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=150");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.container {
+  text-align: center;
+}
+
+.container .progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.container .progress-container::before {
+  content: '';
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  height: 5px;
+  width: 100%;
+  z-index: -1;
+}
+
+.container .progress {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  height: 5px;
+  width: 0%;
+  z-index: -1;
+}
+
+.container .circle {
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid #e0e0e0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.container .circle.active {
+  border-color: #3498db;
+}
+
+.container .btn {
+  background-color: #3498db;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font: 15px "Muli", sans-serif;
+  padding: 8px 30px;
+  margin: 0px 10px;
+}
+
+.container .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.container .btn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+/*# sourceMappingURL=styles.css.map */
