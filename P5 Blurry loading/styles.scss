@@ -1,0 +1,36 @@
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+$font:'Ubuntu', opensans;
+
+*{
+    box-sizing: border border-box;
+}
+
+body{
+    font-family: $font;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    overflow: hidden;
+    margin:0;
+}
+
+.bg{
+    background: url('https://images.unsplash.com/photo-1613934070005-e2f7a68561ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=800') no-repeat center center/cover;
+    position:absolute;
+    top:-30px;
+    left:-30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);       
+}
+
+.loading-text{
+    font-size: 100px;
+    color:white;
+    user-select: none;
+}
