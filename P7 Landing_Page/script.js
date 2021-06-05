@@ -4,6 +4,8 @@ const right = document.querySelector('.right');
 const rightButton = right.querySelector('.btn');
 const container = document.querySelector('.container');
 let filterAssigned = null;
+
+//
 function addFilter() {
     container.classList.remove('nofilter');
     container.classList.add('filter');
