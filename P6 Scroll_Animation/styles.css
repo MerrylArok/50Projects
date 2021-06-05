@@ -9,6 +9,7 @@ body {
   justify-content: center;
   margin: 0;
   background-color: #e5edb6;
+  overflow-x: hidden;
 }
 
 h1 {

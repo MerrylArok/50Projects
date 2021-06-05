@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ZCOOL XiaoWei", serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: white;
+  color: black;
+}
+
+.split.right {
+  right: 0;
+  background: black;
+  color: white;
+}
+
+.hoverLeft .left {
+  width: 70%;
+}
+
+.hoverLeft .right {
+  width: 30%;
+}
+
+.hoverRight .left {
+  width: 30%;
+}
+
+.hoverRight .right {
+  width: 70%;
+}
+
+h1 {
+  font-size: 4rem;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.filter {
+  filter: invert(100%);
+  transition: filter 0.5s ease-out;
+}
+
+.nofilter {
+  filter: invert(0%);
+}
+
+.btn {
+  position: absolute;
+  font-family: "Ubuntu";
+  left: 50%;
+  top: 47%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  filter: invert(100%);
+  font-size: 1rem;
+  width: 7.5rem;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=styles.cs.map */
