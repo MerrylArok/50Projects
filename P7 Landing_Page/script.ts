@@ -56,3 +56,5 @@ right.addEventListener('mouseleave', () => {
     container.classList.remove('hoverRight')
     rightButton.innerText = "SLIDE";
 });
+
+//
