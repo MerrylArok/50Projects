@@ -1,4 +1,5 @@
 # 50Projects
-Recreating 50 projects (Course: 50 projects in 50 days) using Sass and TypeScript
+Recreating [50 projects](https://www.udemy.com/course/50-projects-50-days/) using Sass and TypeScript.
+Projects deviating from their original scope are listed below:
 
-Project 7: Black and White: https://jsitor.com/Kxu91yuXp
+* Project 7: [**Black and White**](https://blackandwhiteandclean.netlify.app/)
