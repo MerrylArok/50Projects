@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+$font:'Heebo', opensans;
+$primaryColor:black;
+$secondaryColor:white;
+$darkPrimaryColor:white;
+$dardSecondaryColor:#333;
+$red:#e74c3c;
+
+html{
+    transition: all 0.5s ease-in;
+
+   &.dark{
+    background-color: #111;
+    color:$darkPrimaryColor;
+
+    .needle{
+        background-color: $darkPrimaryColor;
+        
+    &.second{
+        background-color: $red;
+    }}
+
+}
+}
+
+
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:$font;
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    overflow:hidden;
+}
+
+.toggle{
+    background-color: $primaryColor;
+    color:$secondaryColor;
+    border:0;
+    border-radius:4px;
+    padding:8px 12px;
+    position:absolute;
+    top:100px;
+    cursor: pointer;
+}
+
+.toggle:hover{
+    outline:none;
+    border:2px solid darkred;
+    border-radius:4px; 
+    top:98px;     
+}
+
+.clock-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock{
+    position: relative;
+    width:200px;
+    height:200px;
+}
+
+.needle{
+    background-color: $primaryColor;
+    position:absolute;
+    top:50%;
+    left:50%;
+    height:65px;
+    width:3px;
+    transform-origin:bottom center;
+    transition: all 0.5s ease-in;
+
+    &.hour{
+        transform: translate(-50%, -100%) rotate(0);
+    }
+
+    &.minute{
+        height: 100px;
+        transform: translate(-50%, -100%) rotate(0);
+    }
+
+    &.second{
+        height:100px;
+        background-color: $red;
+        transform: translate(-50%, -100%) rotate(0);
+    }   
+
+}
+
+.center-point{
+        background-color: $red;
+        width: 10px;
+        height:10px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        border-radius:50%;
+}
+
+.center-point::after{
+    content:'';
+    background-color: $primaryColor;
+    width: 5px;
+    height:5px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border-radius:50%;
+}
+
+.time{
+    font-size:60px;
+}
+
+.date{
+    color:#aaa;
+    font-size:14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+
+    .circle{
+        background-color: $primaryColor;
+        color:$secondaryColor;
+        border-radius:50%;
+        height:18px;
+        width:18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        list-style: 18px;
+        transition:all 0.5s ease-in;
+        font-size:12px;
+    }}
